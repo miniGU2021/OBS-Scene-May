@@ -1,0 +1,41 @@
+<svg width="384" height="384" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset in="SourceAlpha" result="raw" />
+            <feGaussianBlur in="raw" stdDeviation="5" result="raw1" />
+            <feBlend in="SourceGraphic" in2="raw1" mode="normal" />
+        </filter>
+        <mask id="m1" x="0" y="0" width="1" height="1" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+            <rect x="0" y="0" width="1" height="1" fill="white" />
+            <circle cx="0.5" cy="0.5" r="0.5" fill="black" />
+        </mask>
+        <pattern id="p1" x="27" y="1" width="30" height="30" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
+            <g fill="rgb(255,251,251)">
+                <rect x="5" y="5" width="20" height="20" mask="url(#m1)"/>
+                <rect x="0" y="0" width="5" height="30" />
+                <rect x="25" y="0" width="5" height="30" />
+                <rect x="0" y="0" width="30" height="5" />
+                <rect x="0" y="25" width="30" height="5" />
+            </g>
+        </pattern>
+    </defs>
+    <g filter="url(#shadow)">
+        <rect x="71" y="71" width="15" height="15" fill="rgb(255,251,251)" />
+        <rect x="86" y="71" width="212" height="15" fill="url(#p1)"/>
+        <g transform="rotate(90,192,192)">
+            <rect x="71" y="71" width="15" height="15" fill="rgb(255,251,251)" />
+            <rect x="86" y="71" width="212" height="15" fill="url(#p1)"/>
+        </g>
+        <g transform="rotate(180,192,192)">
+            <rect x="71" y="71" width="15" height="15" fill="rgb(255,251,251)" />
+            <rect x="86" y="71" width="212" height="15" fill="url(#p1)"/>
+        </g>
+        <g transform="rotate(270,192,192)">
+            <rect x="71" y="71" width="15" height="15" fill="rgb(255,251,251)" />
+            <rect x="86" y="71" width="212" height="15" fill="url(#p1)"/>
+        </g>
+        <rect x="86" y="86" width="212" height="212" fill="rgb(255,251,251)"/>
+        <rect x="91" y="91" width="202" height="202" fill="rgb(245,243,243)"/>
+        <rect x="96" y="96" width="192" height="192" fill="rgb(219,215,215)"/>
+    </g>
+</svg>

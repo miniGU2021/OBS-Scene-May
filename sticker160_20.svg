@@ -1,0 +1,14 @@
+<svg width="480" height="60" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset in="SourceAlpha" result="raw" />
+            <feGaussianBlur in="raw" stdDeviation="5" result="raw1" />
+            <feBlend in="SourceGraphic" in2="raw1" mode="normal" />
+        </filter>
+    </defs>
+    <g filter="url(#shadow)">
+        <rect x="150" y="10" width="180" height="40" fill="rgb(255,251,251)"/>
+        <rect x="155" y="15" width="170" height="30" fill="rgb(245,243,243)"/>
+        <rect x="160" y="20" width="160" height="20" fill="rgb(219,215,215)"/>
+    </g>
+</svg>

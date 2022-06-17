@@ -1,0 +1,24 @@
+<svg width="3200" height="1800" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="f1" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset in="SourceAlpha" result="shadowRaw0" />
+            <feGaussianBlur in="shadowRaw0" stdDeviation="5" result="shadow" />
+            <feBlend in="SourceGraphic" in2="shadow" mode="normal" />
+        </filter>
+    </defs>
+    <g filter="url(#f1)">
+        <g transform="rotate(-0.75,1000,517.5)">
+            <rect x="790" y="440" width="1620" height="920" fill="rgb(255,255,251)" />
+            <rect x="795" y="445" width="1610" height="910" fill="rgb(245,243,243)" />
+            <rect x="800" y="450" width="1600" height="900" fill="rgb(219,215,215)" />
+        </g>
+        <g transform="rotate(1.5,1000,517.5)">
+            <rect x="790" y="440" width="1620" height="920" fill="rgb(255,255,251)" />
+            <rect x="795" y="445" width="1610" height="910" fill="rgb(245,243,243)" />
+            <rect x="800" y="450" width="1600" height="900" fill="rgb(219,215,215)" />
+        </g>
+        <rect x="790" y="440" width="1620" height="920" fill="rgb(255,255,251)" />
+        <rect x="795" y="445" width="1610" height="910" fill="rgb(245,243,243)" />
+        <rect x="800" y="450" width="1600" height="900" fill="rgb(219,215,215)" />
+    </g>
+</svg>

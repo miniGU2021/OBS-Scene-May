@@ -1,0 +1,41 @@
+<svg width="320" height="320" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="f1">
+            <feOffset in="SourceAlpha" result="shadowRaw0" />
+            <feGaussianBlur in="shadowRaw0" stdDeviation="5" result="shadow" />
+            <feBlend in="SourceGraphic" in2="shadow" mode="normal" />
+        </filter>
+    </defs>
+    <g filter="url(#f1)" transform="rotate(0,160,160)">
+        <rect x="70" y="70" rx="10" ry="10" width="180" height="180" fill="rgb(255,255,251)" />
+        <rect x="75" y="75" rx="5" ry="5" width="170" height="170" fill="rgb(245,243,243)" />
+        <rect x="80" y="80" rx="5" ry="5" width="160" height="160" fill="rgb(219,215,215)" />
+        <g>
+            <circle cx="160" cy="160" r="80" fill="rgb(96,89,83)" />
+            <circle cx="160" cy="160" r="30" fill="rgb(47,39,31)" />
+            <circle cx="160" cy="160" r="20" fill="rgb(255,63,63)" />
+            <path d="M 160 90
+                a 75 75 0 0 1 21 3
+                " fill="transparent" stroke="rgb(219,47,47)" stroke-width="5" stroke-linecap="round"/>
+            <path d="M 160 95
+                a 70 70 0 0 1 19.6 2.8
+                " fill="transparent" stroke="rgb(51,47,215)" stroke-width="5" stroke-linecap="round"/>
+            <path d="M 160 100
+                a 65 65 0 0 1 18.2 2.6
+                " fill="transparent" stroke="rgb(219,215,215)" stroke-width="5" stroke-linecap="round"/>
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 160 160" to="360 160 160" dur="12s" repeatCount="indefinite" />
+        </g>
+        <g>
+            <rect x="75" y="75" rx="3.75" ry="2.5" width="10" height="10" fill="rgb(47,39,31)" />
+            <path d="M 80 80
+                L 160 80
+                l 24 8
+                " fill="transparent" stroke="rgb(47,39,31)" stroke-width="5" stroke-linejoin="round" />
+            <path d="M 178 86
+                l 12 4
+                " fill="transparent" stroke="rgb(47,39,31)" stroke-width="10" stroke-linecap="round" />
+            <animateTransform id="a1" attributeName="transform" attributeType="XML" type="rotate" from="0 80 80" to="6 80 80" begin="0s;a2.end" dur="0.5s" fill="freeze" />
+            <animateTransform id="a2" attributeName="transform" attributeType="XML" type="rotate" from="6 80 80" to="0 80 80" begin="a1.end" dur="0.5s" fill="freeze" />
+        </g>
+    </g>
+</svg>
